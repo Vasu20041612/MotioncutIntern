@@ -1,0 +1,150 @@
+/* src/components/SearchBar.css */
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    margin-left: 21px;
+  }
+  
+  .dropbtn {
+    background-color:#93378d;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 25px; /* Curved border radius */
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px; /* Curved border radius */
+  }
+  
+  .dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px; /* Curved border radius for items */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-input-container {
+    color: white;
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    text-indent: 160px;
+    outline: none;
+    border-radius: 25px; /* Curved border radius */
+    padding-right: 40px; /* Add space for the icon */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .search-icon:hover {
+    color: #333;
+  }
+  /* src/components/SearchBar.css */
+.search-input::placeholder {
+    color:#93378d; /* Dark purple color */
+  }
+  /* src/components/SearchBar.css */
+.search-input-container {
+    position: relative;
+    width: 400px;
+    margin-left: 20px; /* Adjust as needed */
+  }
+  
+  .search-input {
+    width: calc(100% - 40px); /* Adjust for icon space */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Curved border radius */
+    padding-right: 40px; /* Space for the icon */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust to move the icon to the edge */
+    transform: translateY(-50%);
+    color: #6a0dad; /* Dark purple color */
+    cursor: pointer;
+  }
+  
+  .search-icon:hover {
+    color: #4b0082; /* Darker shade of purple on hover */
+  }
+  
+
+ /* .dropbtn .arrow{
+  position: absolute;
+    height: 11px;
+    width: 11px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    rotate: -45deg;
+    margin-left: 10px;
+  }
+  
+  .dropbtn .arrow-up{
+    height: 11px;
+    width: 11px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    rotate: 45deg;
+    margin-left: 10px;
+  } */
+
+
+.dropbtn .arrow,
+.dropbtn .arrow-up {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropbtn .arrow-up {
+  border-bottom: none;
+  border-top: 2px solid white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.dropbtn .arrow {
+  transform: translateY(-50%) rotate(-45deg);
+}
